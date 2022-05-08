@@ -34,7 +34,7 @@ const Tours = () => {
       {tours.length === 0 ? (
         <button className="m-5 self-center p-1 w-52 rounded-lg font-semibold text-white bg-cyan-600 transition-all ease-in" onClick={fetchTours}>Refresh</button>
       ) : (
-        tours.map((tour, index) => (
+        tours.map((tour) => (
           <Tour key={tour.id} {...tour} removeTours={removeTours} />
         ))
       )}

@@ -7,7 +7,7 @@ const Tour = ({ id, info, name, price, image, removeTours }) => {
     <div className="w-1/3 flex flex-col m-12 bg-white shadow-medium rounded-md">
       <img
         src={image}
-        alt={`Image du voyage ${name}`}
+        alt={name}
         className="object-cover h-80 rounded-t-md"
       />
       <div className="flex flex-col justify-center p-6">
